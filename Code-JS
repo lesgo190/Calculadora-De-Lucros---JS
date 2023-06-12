@@ -1,0 +1,201 @@
+import java.util.Scanner;
+
+public class PreçoDoTrufado {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Receita de Bombom de Leite Ninho
+        double chocolateMeioAmargo = 0.4; // em kg
+        double leiteCondensado = 0.395; // em kg
+        double margarina = 0.04; // em kg
+        double leiteEmPo = 0.05; // em kg
+        double precoChocolateMeioAmargo = 7.0; // em reais por kg
+        double precoLeiteCondensado = 10.0; // em reais por kg
+        double precoMargarina = 5.0; // em reais por kg
+        double precoLeiteEmPo = 5.0; // em reais por kg
+
+        // Receita de Bombom de Café
+        double cafeSolulvel = 0.1; // em kg
+        double precoCafeSolulvel = 7.0; // em reais por kg
+
+        // Receita de Bombom de Coco
+        double cocoRalado = 0.3; // em kg
+        double precoCocoRalado = 7.0; // em reais por kg
+
+        System.out.println("Escolha a receita que deseja fazer:\n" +
+                "1 - Bombom de Leite Ninho\n" +
+                "2 - Bombom de Café\n" +
+                "3 - Bombom de Coco");
+
+        int escolhaReceita = scanner.nextInt();
+        int numBombons = 0;
+        double valorGasto = 0.0;
+
+        switch (escolhaReceita) {
+    case 1: // Receita de Bombom de Leite Ninho
+System.out.println("Digite o valor que deseja gastar na receita de Leite Ninho:");
+valorGasto = scanner.nextDouble();
+numBombons = (int) (valorGasto /
+((chocolateMeioAmargo * precoChocolateMeioAmargo) +
+(leiteCondensado * precoLeiteCondensado) +
+(margarina * precoMargarina) +
+(leiteEmPo * precoLeiteEmPo)));
+System.out.println("Com R$" + valorGasto + " é possível fazer " + numBombons + " bombons.");
+System.out.println("Ingredientes utilizados:");
+System.out.println("- " + String.format("%.2f", chocolateMeioAmargo * numBombons * precoChocolateMeioAmargo) + " em chocolate meio amargo");
+System.out.println("- " + String.format("%.2f", leiteCondensado * numBombons * precoLeiteCondensado) + " em leite condensado");
+System.out.println("- " + String.format("%.2f", margarina * numBombons * precoMargarina) + " em margarina");
+System.out.println("- " + String.format("%.2f", leiteEmPo * numBombons * precoLeiteEmPo) + " em leite em pó");
+break;
+
+case 2: // Receita de Bombom de Café
+System.out.println("Digite o valor que deseja gastar na receita de Café:");
+valorGasto = scanner.nextDouble();
+numBombons = (int) (valorGasto /
+((chocolateMeioAmargo * precoChocolateMeioAmargo) +
+(leiteCondensado * precoLeiteCondensado) +
+(margarina * precoMargarina) +
+(cafeSolulvel * precoCafeSolulvel)));
+System.out.println("Com R$" + valorGasto + " é possível fazer " + numBombons + " bombons.");
+System.out.println("Ingredientes utilizados:");
+System.out.println("- " + String.format("%.2f", chocolateMeioAmargo * numBombons * precoChocolateMeioAmargo) + " em chocolate meio amargo");
+System.out.println("- " + String.format("%.2f", leiteCondensado * numBombons * precoLeiteCondensado) + " em leite condensado");
+System.out.println("- " + String.format("%.2f", margarina * numBombons * precoMargarina) + " em margarina");
+System.out.println("- " + String.format("%.2f", cafeSolulvel * numBombons * precoCafeSolulvel) + " em café solúvel");
+break;
+
+case 3: // Receita de Bombom de Coco
+System.out.println("Digite o valor que deseja gastar na receita de Coco:");
+valorGasto = scanner.nextDouble();
+numBombons = (int) (valorGasto /
+((chocolateMeioAmargo * precoChocolateMeioAmargo) +
+(leiteCondensado * precoLeiteCondensado) +
+(margarina * precoMargarina) +
+(cocoRalado * precoCocoRalado)));
+System.out.println("Com R$" + valorGasto + " é possível fazer " + numBombons + " bombons.");
+System.out.println("Ingredientes utilizados:");
+System.out.println("- " + String.format("%.2f", chocolateMeioAmargo * numBombons * precoChocolateMeioAmargo) + " em chocolate meio amargo");
+System.out.println("- " + String.format("%.2f", leiteCondensado * numBombons * precoLeiteCondensado) + " em leite condensado");
+System.out.println("- " + String.format("%.2f", margarina * numBombons * precoMargarina) + " em margarina");
+System.out.println("- " + String.format("%.2f", cocoRalado * numBombons * precoCocoRalado) + " em coco ralado");
+break;
+
+               
+                
+        }
+    }
+}
+
+
+
+fimprog
+
+
+
+
+
+
+
+
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication9;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Aluno
+ */
+public class JavaApplication9 {
+
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Receita de Bombom de Leite Ninho
+        double chocolateMeioAmargo = 0.4; // em kg
+        double leiteCondensado = 0.395; // em kg
+        double margarina = 0.04; // em kg
+        double leiteEmPo = 0.05; // em kg
+        double precoChocolateMeioAmargo = 1.0; // em reais por kg
+        double precoLeiteCondensado = 2.0; // em reais por kg
+        double precoMargarina = 1.0; // em reais por kg
+        double precoLeiteEmPo = 1.0; // em reais por kg
+
+        // Receita de Bombom de Café
+        double cafeSolulvel = 0.1; // em kg
+        double precoCafeSolulvel = 2.0; // em reais por kg
+
+        // Receita de Bombom de Coco
+        double cocoRalado = 0.3; // em kg
+        double precoCocoRalado = 2.0; // em reais por kg
+
+        System.out.println("Escolha a receita que deseja fazer:\n" +
+                "1 - Bombom de Leite Ninho\n" +
+                "2 - Bombom de Café\n" +
+                "3 - Bombom de Coco");
+
+        int escolhaReceita = scanner.nextInt();
+        int numBombons = 0;
+        double valorGasto = 0.0;
+
+        switch (escolhaReceita) {
+    case 1: // Receita de Bombom de Leite Ninho
+System.out.println("Digite o valor que deseja gastar na receita de Leite Ninho:");
+valorGasto = scanner.nextDouble();
+numBombons = (int) (valorGasto /
+((chocolateMeioAmargo * precoChocolateMeioAmargo) +
+(leiteCondensado * precoLeiteCondensado) +
+(margarina * precoMargarina) +
+(leiteEmPo * precoLeiteEmPo)));
+System.out.println("Com R$" + valorGasto + " é possível fazer " + numBombons + " bombons.");
+System.out.println("Ingredientes utilizados:");
+System.out.println("- " + String.format("%.2f", chocolateMeioAmargo * numBombons * precoChocolateMeioAmargo) + " em chocolate meio amargo");
+System.out.println("- " + String.format("%.2f", leiteCondensado * numBombons * precoLeiteCondensado) + " em leite condensado");
+System.out.println("- " + String.format("%.2f", margarina * numBombons * precoMargarina) + " em margarina");
+System.out.println("- " + String.format("%.2f", leiteEmPo * numBombons * precoLeiteEmPo) + " em leite em pó");
+break;
+
+case 2: // Receita de Bombom de Café
+System.out.println("Digite o valor que deseja gastar na receita de Café:");
+valorGasto = scanner.nextDouble();
+numBombons = (int) (valorGasto /
+((chocolateMeioAmargo * precoChocolateMeioAmargo) +
+(leiteCondensado * precoLeiteCondensado) +
+(margarina * precoMargarina) +
+(cafeSolulvel * precoCafeSolulvel)));
+System.out.println("Com R$" + valorGasto + " é possível fazer " + numBombons + " bombons.");
+System.out.println("Ingredientes utilizados:");
+System.out.println("- " + String.format("%.2f", chocolateMeioAmargo * numBombons * precoChocolateMeioAmargo) + " em chocolate meio amargo");
+System.out.println("- " + String.format("%.2f", leiteCondensado * numBombons * precoLeiteCondensado) + " em leite condensado");
+System.out.println("- " + String.format("%.2f", margarina * numBombons * precoMargarina) + " em margarina");
+System.out.println("- " + String.format("%.2f", cafeSolulvel * numBombons * precoCafeSolulvel) + " em café solúvel");
+break;
+
+case 3: // Receita de Bombom de Coco
+System.out.println("Digite o valor que deseja gastar na receita de Coco:");
+valorGasto = scanner.nextDouble();
+numBombons = (int) (valorGasto /
+((chocolateMeioAmargo * precoChocolateMeioAmargo) +
+(leiteCondensado * precoLeiteCondensado) +
+(margarina * precoMargarina) +
+(cocoRalado * precoCocoRalado)));
+System.out.println("Com R$" + valorGasto + " é possível fazer " + numBombons + " bombons.");
+System.out.println("Ingredientes utilizados:");
+System.out.println("- " + String.format("%.2f", chocolateMeioAmargo * numBombons * precoChocolateMeioAmargo) + " em chocolate meio amargo");
+System.out.println("- " + String.format("%.2f", leiteCondensado * numBombons * precoLeiteCondensado) + " em leite condensado");
+System.out.println("- " + String.format("%.2f", margarina * numBombons * precoMargarina) + " em margarina");
+System.out.println("- " + String.format("%.2f", cocoRalado * numBombons * precoCocoRalado) + " em coco ralado");
+break;
+
+               
+                
+        }
+    }
+}
